@@ -183,6 +183,7 @@ body {
     box-shadow: 0 6px 0 0 #be272a;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 .slider {
     -webkit-appearance: none;
@@ -212,43 +213,58 @@ body {
 .volume-control-max {
     height: 20px;
     width: 20px;
-    background-color: #ed5660;
+    background-color: #4a8ad9;
     border: 2px solid #ff8e00;
     border-radius: 50%;
     position: absolute;
     top: 125px;
     right: 50px;
-    box-shadow: 0 6px 0 0 #be272a;
+    box-shadow: 0 3px 0 0 #386aa8;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+.volume-control-max:active {
+    background-color: #386aa8 !important;
+    box-shadow: none;
 }
 .volume-control-mid {
     height: 20px;
     width: 20px;
-    background-color: #ed5660;
+    background-color: #2c823d;
     border: 2px solid #ff8e00;
     border-radius: 50%;
     position: absolute;
     top: 165px;
     right: 50px;
-    box-shadow: 0 6px 0 0 #be272a;
+    box-shadow: 0 3px 0 0 #1e612b;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+.volume-control-mid:active {
+    background-color: #1e612b !important;
+    box-shadow: none;
 }
 .volume-control-min {
     height: 20px;
     width: 20px;
-    background-color: #ed5660;
+    background-color: #af59c2;
     border: 2px solid #ff8e00;
     border-radius: 50%;
     position: absolute;
     top: 205px;
     right: 50px;
-    box-shadow: 0 6px 0 0 #be272a;
+    box-shadow: 0 3px 0 0 #7e3c8c;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
 }
-.btn:active, .volume-control-max:active, .volume-control-mid:active, .volume-control-min:active {
+.volume-control-min:active {
+    background-color: #7e3c8c !important;
+    box-shadow: none;
+}
+.btn:active {
     background-color: #d64750 !important;
     box-shadow: none;
 }
